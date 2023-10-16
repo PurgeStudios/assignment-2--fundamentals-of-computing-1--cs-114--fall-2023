@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class Diamond {
   public static void main(String[] args) {
     System.out.println("Please Enter a Number:");
-    Scanner input = new Scanner(System.in);
+    Scanner scan = new Scanner(System.in);
     //-----------------------------------------
     // Assigning Variables
     //-----------------------------------------
-    int numOfStars = input.nextInt();
+    int numOfStars = scan.nextInt();
     int shapeOfDiamond, rows;
     //-----------------------------------------
     // Code checking if user input is negative
@@ -77,6 +77,6 @@ public class Diamond {
       }
 
       }
-    input.close();
+    scan.close();
   }
 }
