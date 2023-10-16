@@ -66,17 +66,7 @@ public class Diamond {
         }
         System.out.println("");
       }
-      for(rows = numOfStars / 2 + 1; rows <= numOfStars/ 2 + 1; rows += 1) {
-        for(int spaces = -2 * rows + (numOfStars + 2); spaces < 0; spaces -= 1) {
-          System.out.print(" ");
-        }
-        for(shapeOfDiamond = 2 * rows - 2; shapeOfDiamond > numOfStars -rows-1; shapeOfDiamond -= 1) {
-          System.out.print(" *");
-        }
-        System.out.println("");
-      }
-
-      }
+    }
     scan.close();
   }
 }
