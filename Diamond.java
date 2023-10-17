@@ -12,7 +12,7 @@ public class Diamond {
     //-----------------------------------------
     // Code checking if user input is negative
     //-----------------------------------------
-    if(numOfStars%2 == 1) {
+    if(numOfStars % 2 == 1) {
     //-----------------------------------------
     // Code for top of Odd Diamond
     //-----------------------------------------
@@ -41,10 +41,10 @@ public class Diamond {
       //-----------------------------------------
       // Code checking if user input is positive
       //-----------------------------------------
-      else if(numOfStars%2 == 0) {
-        //-----------------------------------------
-        // Attempt at Code for top of even diamond
-        //-----------------------------------------
+    else if(numOfStars % 2 == 0) {
+      //-----------------------------------------
+      // Code for top of even diamond (Working)
+      //-----------------------------------------
       for(rows = 2; rows <= numOfStars / 2; rows += 1) {
         for(int spaces = -2 * rows + (numOfStars + 2); spaces > 0; spaces -= 1) {
           System.out.print(" ");
@@ -52,10 +52,10 @@ public class Diamond {
         for(shapeOfDiamond = 2 * rows - 2; shapeOfDiamond > 0; shapeOfDiamond -= 1) {
           System.out.print(" *");
         }
-        System.out.println("");
-      }
+          System.out.println("");
+        }
         //-------------------------------------------
-        // Attempt at Code for bottom of even diamond
+        // Code for bottom of even diamond (Unstable)
         //-------------------------------------------
       for(rows = numOfStars/2 + 1; rows <= numOfStars / 2 + 1; rows -= 1) {
         for(int spaces = -2 * rows + (numOfStars + 2); spaces > 0; spaces -= 1) {
@@ -65,8 +65,12 @@ public class Diamond {
           System.out.print(" *");
         }
         System.out.println("");
+        //-------------------------------------------
+        // WARNING: EVEN CODE IS UNFINISHED
+        // WILL RUN INDEFINITELY
+        //-------------------------------------------
       }
     }
-    scan.close();
+  scan.close();
   }
 }
